@@ -7,6 +7,17 @@ import java.lang.String
 
 
 
+def static "com.testwithhari.katalon.plugins.Gmail.readLatestEMailBodyContent"(
+    	String emailID	
+     , 	String password	
+     , 	String folderLableName	) {
+    (new com.testwithhari.katalon.plugins.Gmail()).readLatestEMailBodyContent(
+        	emailID
+         , 	password
+         , 	folderLableName)
+}
+
+
 def static "com.testwithhari.katalon.plugins.Gmail.sendEmail"(
     	String from_emailaddress	
      , 	String email_password	
@@ -38,17 +49,6 @@ def static "com.testwithhari.katalon.plugins.Gmail.getEmailsCount"(
      , 	String password	
      , 	String folderLableName	) {
     (new com.testwithhari.katalon.plugins.Gmail()).getEmailsCount(
-        	emailID
-         , 	password
-         , 	folderLableName)
-}
-
-
-def static "com.testwithhari.katalon.plugins.Gmail.readLatestEMailBodyContent"(
-    	String emailID	
-     , 	String password	
-     , 	String folderLableName	) {
-    (new com.testwithhari.katalon.plugins.Gmail()).readLatestEMailBodyContent(
         	emailID
          , 	password
          , 	folderLableName)

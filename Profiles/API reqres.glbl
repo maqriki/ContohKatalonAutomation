@@ -6,27 +6,17 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'standard_user'</initValue>
-      <name>username</name>
+      <initValue>'https://reqres.in/api'</initValue>
+      <name>base_url</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'secret_sauce'</initValue>
-      <name>password</name>
+      <initValue>null</initValue>
+      <name>response</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'firstname'</initValue>
-      <name>firstname</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'lastname'</initValue>
-      <name>lastname</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'34155'</initValue>
-      <name>postalcode</name>
+      <initValue>''</initValue>
+      <name>user_id</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -12,6 +12,26 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
+    public static Object base_url
+     
+    /**
+     * <p></p>
+     */
+    public static Object response
+     
+    /**
+     * <p></p>
+     */
+    public static Object user_id
+     
+    /**
+     * <p></p>
+     */
+    public static Object url
+     
+    /**
+     * <p></p>
+     */
     public static Object username
      
     /**
@@ -37,11 +57,6 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
-    public static Object url
-     
-    /**
-     * <p></p>
-     */
     public static Object generalTime
      
     /**
@@ -61,12 +76,15 @@ public class GlobalVariable {
 			selectedVariables += TestCaseMain.getGlobalVariables(RunConfiguration.getExecutionProfile())
             selectedVariables += TestCaseMain.getParsedValues(RunConfiguration.getOverridingParameters())
     
+            base_url = selectedVariables['base_url']
+            response = selectedVariables['response']
+            user_id = selectedVariables['user_id']
+            url = selectedVariables['url']
             username = selectedVariables['username']
             password = selectedVariables['password']
             firstname = selectedVariables['firstname']
             lastname = selectedVariables['lastname']
             postalcode = selectedVariables['postalcode']
-            url = selectedVariables['url']
             generalTime = selectedVariables['generalTime']
             closeBrowserLogin = selectedVariables['closeBrowserLogin']
             closeBrowserAddItem = selectedVariables['closeBrowserAddItem']

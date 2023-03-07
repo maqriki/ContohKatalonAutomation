@@ -16,4 +16,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import groovy.json.JsonSlurper as JsonSlurper
 
+'Get single user'
+getSingleUser = findTestObject('API reqres/Get single user', [('userId') : user_id])
+
+'Call API'
+response = WS.sendRequest(getSingleUser)
+
+'Console reponse text'
+println(response.getResponseText())
+
+'Set global variable'
+GlobalVariable.response = response
+
+'Compare status code'
+WS.verifyResponseStatusCode(response, status_code.toInteger())
+
+if(responseCode == 200) {
+	WS.verifyElementPropertyValue(GlobalVariable.response, 'data.first_name', first_name)
+}

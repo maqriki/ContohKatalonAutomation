@@ -5,4 +5,43 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>816f47ae-0d73-466e-9544-e92bec34297b</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7f482c19-9310-4c89-8188-d430a8949b72</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>668f0221-1215-413e-9dde-97cb17b6ad51</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>35c8d0c1-d220-47c8-996c-521b6ac7c10c</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'2'</defaultValue>
+      <description></description>
+      <id>7f482c19-9310-4c89-8188-d430a8949b72</id>
+      <masked>false</masked>
+      <name>user_id</name>
+   </variable>
+   <variable>
+      <defaultValue>'Janet'</defaultValue>
+      <description></description>
+      <id>668f0221-1215-413e-9dde-97cb17b6ad51</id>
+      <masked>false</masked>
+      <name>first_name</name>
+   </variable>
+   <variable>
+      <defaultValue>'200'</defaultValue>
+      <description></description>
+      <id>35c8d0c1-d220-47c8-996c-521b6ac7c10c</id>
+      <masked>false</masked>
+      <name>status_code</name>
+   </variable>
 </TestCaseEntity>
